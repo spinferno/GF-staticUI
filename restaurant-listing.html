@@ -1,0 +1,272 @@
+<!doctype lang="en" html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="styles/vendor/normalize.min.css">
+    <link rel="stylesheet" href="styles/main.css">    
+    <link rel="stylesheet" href="styles/vendor/slick.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.0.0/rellax.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="header-container">
+        <header>
+            <div class="logo-container vertically-centre-parent">
+                <img src="img/goodfood-logo.svg" id="goodfood-logo-main" width="245" height="71" class="img-fluid">
+            </div>
+
+            <div class="header-actions-container flex-rows flex-rows__end">
+                <div class="button-container vertically-centre-parent">
+                    <button type="button" class="cta-outline">Buy a gift card</button>
+                </div>
+
+                <div class="icon-container vertically-centre-parent">
+                    <div class="icon-wrapper">
+
+                        <div class="search-dialog-container">
+                            <form action="" method="get" class="form-searchgoodfood mb-0">
+                                <div class="form-row">
+                                    <input type="text" name="name" id="searchterms" class="input__outline scale-in-hor-right" placeholder="" required>
+                                </div>
+                                <!-- <div class="form-row">
+                                    <input type="submit" value="Search" class="cta-solid">
+                                </div> -->
+                            </form>
+                            <a id="search-trigger-open">
+                                <img src="./img/icons/icon-search.svg" width="30" height="30">
+                            </a>
+                            <a id="search-trigger-close">
+                                <img src="./img/icons/icon-cross.svg" width="30" height="30">
+                            </a> 
+                        </div>
+
+                        <a id="cart-trigger">
+                            <img src="./img/icons/cart_2.svg" width="34" height="34">
+                            <div class="cart-trigger--quantity-indicator">22</div>
+                        </a>
+                        <a id="dropdown-trigger-open">
+                            <img src="./img/icons/hamburger.svg" width="32" height="32">
+                        </a>
+                        <a id="dropdown-trigger-close">
+                            <img src="./img/icons/icon-cross.svg" width="32" height="32">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <div class="header-dropdown shadow shadow__centered">
+            <div class="header-dropdown--content">
+                <div class="primary-links">
+                    <nav>
+                        <a href="#">Buy a Gift Card</a>
+                        <a href="./restaurant-listing.html">Find & Book Restaurants</a>                     
+                        <a href="#">Check my Balance</a>
+                        <a href="#">News & Offers</a>
+                    </nav>
+                    <button type="button" class="cta-solid">CHECK CARD BALANCE & EXPIRY</button>
+                </div>
+                <div class="secondary-links">                    
+                    <nav class="text-links">
+                        <a href="#">About</a>
+                        <a href="#">Support</a>
+                        <a href="#">My Account</a>
+                        <a href="#">Subscribe</a>
+                    </nav>
+                    <nav class="icon-links">
+                        <a href="#"><img src="./img/icons/icon-social-fb-dark.svg" height="20" width="20"></a>
+                        <a href="#"><img src="./img/icons/icon-social-twitter-dark.svg" height="20" width="20"></a>
+                        <a href="#"><img src="./img/icons/icon-social-linkedin-dark.svg" height="20" width="20"></a>
+                        <a href="#"><img src="./img/icons/icon-social-instagram-dark.svg" height="20" width="20"></a>
+                    </nav>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <div class="feature-container feature-container__explore-restaurants flex-rows">
+        <div class="feature-container--content">
+            <h1>Explore our range of restaurants</h1>        
+            <form action="" method="get" class="form-findrestaurant">
+                <div class="form-row">
+                    <input type="text" name="restaurant" id="restaurant" class="input__outline" placeholder="Search Here" required>
+                </div>
+                <!-- <div class="form-row">
+                    <input type="submit" value="Find Restaurants" class="cta-solid">
+                </div> -->
+            </form> 
+        </div>
+        <div class="feature-container--splash">
+            
+        </div>
+    </div>
+    
+    <div class="feature-container feature-container__restaurant-suggestions">
+        <div class="feature-container--content section-std-padding">
+            <h2 class="w-50">Give the gift of a food and dining experience in Surry Hills</h2>
+            <ol class="full-image-listing listing-row">
+                <li>
+                    <div class="listing-row--bg-overlay">
+                        <div class="restaurant-image-bg" style="background-image:url(./img/suggested/19925c24b2a6cf52e5797a5748e99757.jpg)">   
+                        </div>
+                    </div>
+                    <div class="listing-row--content">
+                        <span class="restaurant-tagline">Birthday dinner at Paddo Inn</span>
+                    </div>                    
+                </li>
+                <li>
+                    <div class="listing-row--bg-overlay">
+                        <div class="restaurant-image-bg" style="background-image:url(./img/suggested/8c616d0d2837fd8dc366ef8ba0046fc0.jpg)">   
+                        </div>
+                    </div>
+                    <div class="listing-row--content">
+                        <span class="restaurant-tagline">Xmas lunch at Firedoor</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="listing-row--bg-overlay">
+                        <div class="restaurant-image-bg" style="background-image:url(./img/suggested/c95339b1403042740f16aa137fcb8a75.jpg)">   
+                        </div>
+                    </div>
+                    <div class="listing-row--content">
+                        <span class="restaurant-tagline">Birthday dinner at Paddo Inn</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="listing-row--bg-overlay">
+                        <div class="restaurant-image-bg" style="background-image:url(./img/suggested/0f7e731afa71e6816d35f82e23560d87.jpg)">   
+                        </div>
+                    </div>
+                    <div class="listing-row--content">
+                        <span class="restaurant-tagline">Xmas lunch at Firedoor</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="listing-row--bg-overlay">
+                        <div class="restaurant-image-bg" style="background-image:url(./img/suggested/19925c24b2a6cf52e5797a5748e99757.jpg)">   
+                        </div>
+                    </div>
+                    <div class="listing-row--content">
+                        <span class="restaurant-tagline">Birthday dinner at Paddo Inn</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="listing-row--bg-overlay">
+                        <div class="restaurant-image-bg" style="background-image:url(./img/suggested/87e10902f3f4dec2691d447a70290d55.jpg)">   
+                        </div>
+                    </div>
+                    <div class="listing-row--content">
+                        <span class="restaurant-tagline">Xmas lunch at Firedoor</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="listing-row--bg-overlay">
+                        <div class="restaurant-image-bg" style="background-image:url(./img/suggested/19925c24b2a6cf52e5797a5748e99757.jpg)">   
+                        </div>
+                    </div>
+                    <div class="listing-row--content">
+                        <span class="restaurant-tagline">Birthday dinner at Paddo Inn</span>
+                    </div>
+                </li>
+            </ol>
+            <button type="button" class="cta-solid">Buy a gift card</button>
+        </div>
+    </div>
+
+    <div class="feature-container feature-container__restaurant-finder">
+        <div class="restaurant-finder--finder-actions">
+            <div class="refine-block">
+                <button type="button" class="cta-outline">Refine</button>
+            </div>
+            <div class="view-block">
+                <button type="button" class="cta-outline">List View</button>
+                <button type="button" class="cta-solid">Map View</button>
+            </div>                    
+        </div>
+        <div class="restaurant-finder--results-listing">
+            <ol class="search-results-listings">
+                <li class="search-results-listing active">
+                    <div class="search-results-listing--splash-container" 
+                        style="background-image: url(./img/learnmore/c95339b1403042740f16aa137fcb8a75.jpg);">
+                    </div>
+                    <div class="search-results-listing--description-container">
+                        <div class="restuarant-name">Restaurant Name</div>                        
+                        <div class="restuarant-location">Surry Hills, NSW</div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <div class="restaurant-finder--map-overlay">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1563.1092357496418!2d151.21303464322887!3d-33.886745731194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae1ec33137bf%3A0x52e315e5e98f32cf!2sThe%20Clock!5e0!3m2!1sen!2sau!4v1582694930961!5m2!1sen!2sau" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="main wrapper clearfix">
+        </div><!-- #main -->
+    </div> <!-- #main-container -->
+
+    <footer class="global-footer">        
+        <div class="global-footer--content section-std-padding">
+            <div class="footer-body">
+                <div class="links-container">
+                    <ol class="text-link-listing listing-row">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Corporate Gifts</a></li>                
+                        <li><a href="#">FAQs</a></li>               
+                        <li><a href="#">Get Help</a></li>
+                    </ol>
+                    <ol class="icon-link-listing listing-row">
+                        <li><a href="#"><img src="./img/icons/icon-social-fb.svg" height="20" width="20"></a></li>
+                        <li><a href="#"><img src="./img/icons/icon-social-twitter.svg" height="20" width="20"></a></li>
+                        <li><a href="#"><img src="./img/icons/icon-social-linkedin.svg" height="20" width="20"></a></li>
+                        <li><a href="#"><img src="./img/icons/icon-social-instagram.svg" height="20" width="20"></a></li>
+                    </ol>
+                </div>
+                <div class="inpage-nav-container">
+                    <a href="#">Back to top <img src="./img/icons/icon-caret-up.svg" height="7.59" width="13.06"></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <ol class="bottom-links-listing listing-row">
+                    <li>© 2019 Good Food Gift Cards</li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ol>
+            </div>
+        </div>       
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+
+    <script src="js/vendor/slick.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
