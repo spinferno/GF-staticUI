@@ -8,6 +8,9 @@ $(window).on("load resize", function () {
     $(".aspect-ratio-1_5__by-width").each(function () {
         $(this).height(this.clientWidth * 0.6666666666666667);
     });
+
+    // apply background parallax dimensions
+    $('.background-canvas').css("width", $(".header-container header")[0].clientWidth.toString()+"px"); 
 });
 
 $(document).ready(function () {
@@ -44,8 +47,8 @@ $(document).ready(function () {
         firstBlockOffset = notificationHeight + heightOfHeader;
     };
 
-    // apply background parallax width
-    $('.background-canvas').css("width", $(".header-container header")[0].clientWidth.toString()+"px"); 
+    // apply background parallax dimensions
+    $('.background-canvas').css("height", $("body").clientheight+"px"); 
 
     // apply vertical offsets
     var mq = window.matchMedia( "(min-width: 768px)" );
@@ -54,6 +57,7 @@ $(document).ready(function () {
         $(".header-container").next().css("margin-top", firstBlockOffset.toString()+"px");
         $(".background-canvas").css("margin-top", verticalOffset.toString()+"px");
         $(".header-container").css("height", parseInt(heightOfHeader)+"px");
+        $('.background-canvas').css("overflow", "visible");
     } else {
         $(".header-container").next().css("margin-top", 0);
         $('.header-container').css("margin-top", 0);

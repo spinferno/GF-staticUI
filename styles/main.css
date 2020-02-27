@@ -1083,6 +1083,8 @@ body.takeover .feature-container__nearestrestaurant {
     width: 100%;
     z-index: -1;
     max-width: 1440px;   
+    overflow: hidden;
+    height: 100%;
 }
 
 @media (max-width: 1440px) { 
