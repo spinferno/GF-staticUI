@@ -1566,6 +1566,12 @@ footer.global-footer .bottom-links-listing > * {
     }
 }
 
+@media (max-width: 429.98px) {
+    footer.global-footer .links-container .icon-link-listing > * {
+        margin-right: 5px;
+    }
+}
+
 /* #endregion */
 
 /* #region Cross browser compatibility */
