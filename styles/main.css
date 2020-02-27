@@ -1082,7 +1082,7 @@ body.takeover .feature-container__nearestrestaurant {
     top: 0;
     width: 100%;
     z-index: -1;
-    max-width: 1440px;
+    max-width: 1440px;   
 }
 
 @media (max-width: 1440px) { 
@@ -1387,6 +1387,7 @@ body.takeover .feature-container__nearestrestaurant {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
+    margin-bottom: 10px;
 }
 
 .search-results-listings {
@@ -1394,26 +1395,37 @@ body.takeover .feature-container__nearestrestaurant {
     list-style: none;
     flex-direction: column;
     padding-left: 0;
+    overflow-y: auto;
+    height: 800px;
 }
 
 .search-results-listing--description-container {
     flex-grow: 1;
-    padding-left: 10px;
+    padding: 8px 5px 8px 10px;
 }
 
 .search-results-listing {
     width: 468px;
 }
 
-.search-results-listing--description-container .restuarant-name {
+.search-results-listing--description-container .restaurant-name {
     font-family: 'stag';
     font-size: 1.25rem;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.search-results-listing--description-container .restaurant-location,
+.search-results-listing--description-container .restaurant-cuisine {
+    font-size: 0.875rem;
 }
 
 .search-results-listing--splash-container {
     width: 140px;
     height: 128px;
 }
+
+/* map overlay */
 
 .restaurant-finder--map-overlay {
     flex-grow: 1;

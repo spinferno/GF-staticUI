@@ -26,6 +26,7 @@ $(document).ready(function () {
     if(isNotificationVisible){
         notificationHeight = $('.notification-container')[0].clientHeight;        
         verticalOffset = verticalOffset + notificationHeight;
+        heightOfHeader = heightOfHeader + notificationHeight;
     };
 
     // prepare layout for homepage takeover
@@ -43,13 +44,16 @@ $(document).ready(function () {
         firstBlockOffset = notificationHeight + heightOfHeader;
     };
 
+    // apply background parallax width
+    $('.background-canvas').css("width", $(".header-container header")[0].clientWidth.toString()+"px"); 
+
     // apply vertical offsets
     var mq = window.matchMedia( "(min-width: 768px)" );
     if (mq.matches) {
         // verticalOffset = verticalOffset + $(".header-container header")[0].clientHeight;
         $(".header-container").next().css("margin-top", firstBlockOffset.toString()+"px");
         $(".background-canvas").css("margin-top", verticalOffset.toString()+"px");
-        $(".header-container").css("height", parseInt(heightOfHeader+verticalOffset)+"px");
+        $(".header-container").css("height", parseInt(heightOfHeader)+"px");
     } else {
         $(".header-container").next().css("margin-top", 0);
         $('.header-container').css("margin-top", 0);
@@ -87,6 +91,7 @@ $(document).ready(function () {
     $("#dismiss-notification-trigger").click(function() {
         $(".notification-container").hide();
         var verticalOffset = 0;
+        heightOfHeader = 172;
         var mq = window.matchMedia( "(min-width: 768px)" );
         if (mq.matches) {verticalOffset = $('.header-container header')[0].clientHeight};
         $('.header-container').next().css("margin-top", parseInt(verticalOffset));
